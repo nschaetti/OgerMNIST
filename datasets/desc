@@ -1,0 +1,26 @@
+
+mnist1.p : 15x15 normalized, rotation 0°, rotation 90°
+mnist2.p : 20x20 normalized, rotation 0°
+mnist3.p : 28x28 not normalized
+
+mnist_affine_1 : original + 1 * affine(0.2,1,0.6)
+mnist_affine_2 : original + 2 * affine(0.2,1,0.6)
+mnist_affine_3 : original + 3 * affine(0.2,1,0.6)
+
+mnist2_affine_1 : original + 1 * affine(0.2,0.5,0.3)
+mnist2_affine_2 : original + 2 * affine(0.2,0.5,0.3)
+mnist2_affine_3 : original + 3 * affine(0.2,0.5,0.3)
+
+mnist3_affine_1 : original + 1 * affine(0.05,0.1,0.05)
+
+mnist4_affine_1 : original + 1 * affine(0.15,15,0)
+
+mnist_elastic_1 : original + 1 * elastic(6.0,1.1)
+
+mnist2_elastic_1 : original + 1 * elastic(3.0,0.55)
+
+mnist3_elastic_1 : original + 1 * elastic(36,6)
+
+mnist4_elastic_1 : original + 1 * elastic(18,3)
+
+mnist1_both_1 : original + 1 * affine(0.15,0.15,0) + 1 * both(36,6)
